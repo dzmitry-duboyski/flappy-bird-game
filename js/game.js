@@ -10,15 +10,15 @@ var flySound = new Audio();
 var scoreSound = new Audio();
 var soundGame = new Audio();
 
-bird.src='../assets/img/flappy_bird_bird.png';
-background.src='../assets/img/flappy_bird_bg.png';
-frontground.src='../assets/img/flappy_bird_fg.png';
-pipeUp.src='../assets/img/flappy_bird_pipeUp.png';
-pipeBottom.src='../assets/img/flappy_bird_pipeBottom.png';
-gameOverImage.src='../assets/img/flappy_bird_bg_game_over.png';
-flySound.src='../assets/audio/fly.mp3';
-scoreSound.src='../assets/audio/score.mp3';
-soundGame.src='../assets/audio/game.mp3';
+bird.src='./assets/img/flappy_bird_bird.png';
+background.src='./assets/img/flappy_bird_bg.png';
+frontground.src='./assets/img/flappy_bird_fg.png';
+pipeUp.src='./assets/img/flappy_bird_pipeUp.png';
+pipeBottom.src='./assets/img/flappy_bird_pipeBottom.png';
+gameOverImage.src='./assets/img/flappy_bird_bg_game_over.png';
+flySound.src='./assets/audio/fly.mp3';
+scoreSound.src='./assets/audio/score.mp3';
+soundGame.src='./assets/audio/game.mp3';
 
 var gap = 100;
 var birdXPosition=10;
@@ -99,7 +99,7 @@ function birdFly(){
 //sound -game over
 function restartGameSound(){
   var restartGame = new Audio();
-  restartGame.src='../assets/audio/restartGame.mp3';
+  restartGame.src='./assets/audio/restartGame.mp3';
   restartGame.play();
 }
 
