@@ -9,6 +9,7 @@ var gameOverImage = new Image();
 var flySound = new Audio();
 var scoreSound = new Audio();
 var soundGame = new Audio();
+var touchDevice = false;
 
 bird.src='./assets/img/flappy_bird_bird.png';
 background.src='./assets/img/flappy_bird_bg.png';
@@ -88,7 +89,7 @@ function birdGravity(){
 }
 
 function birdFly(event){
-  console.log(event);
+ // console.log(event);
   if(gameOver===true){
     gameOver=false;
     location.reload();
@@ -104,9 +105,19 @@ function restartGameSound(){
   restartGame.play();
 }
 
+//if device is mobile
+function touchBirdFly(event) {
+  if(touchDevice===false){
+    touchDevice=true;
+    document.removeEventListener('click', birdFly, false);
+   }
+   birdFly();
+}
+
 //pause 1000, because speed hosting not wery fast 
 setTimeout(draw, 1000);
 
 document.addEventListener('keydown',birdFly)
 document.addEventListener('click',birdFly)
-document.addEventListener('touchstart', birdFly)
+document.addEventListener('touchstart', touchBirdFly)
+
