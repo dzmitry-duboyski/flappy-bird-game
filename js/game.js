@@ -87,7 +87,8 @@ function birdGravity(){
   birdYPosition+=gravityValue;
 }
 
-function birdFly(){
+function birdFly(event){
+  console.log(event);
   if(gameOver===true){
     gameOver=false;
     location.reload();
@@ -107,3 +108,5 @@ function restartGameSound(){
 setTimeout(draw, 1000);
 
 document.addEventListener('keydown',birdFly)
+document.addEventListener('click',birdFly)
+document.addEventListener('touchstart', birdFly)
