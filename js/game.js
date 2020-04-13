@@ -103,5 +103,6 @@ function restartGameSound(){
   restartGame.play();
 }
 
-pipeBottom.onload = draw;
+//pipeBottom.onload = draw;
+setTimeout(draw, 1000);
 document.addEventListener('keydown',birdFly)
