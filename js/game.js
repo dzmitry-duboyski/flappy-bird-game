@@ -103,6 +103,7 @@ function restartGameSound(){
   restartGame.play();
 }
 
-//pipeBottom.onload = draw;
+//pause 1000, because speed hosting not wery fast 
 setTimeout(draw, 1000);
+
 document.addEventListener('keydown',birdFly)
