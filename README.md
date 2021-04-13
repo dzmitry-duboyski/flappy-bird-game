@@ -4,7 +4,8 @@ Flappy Bird is a side-scrolling mobile game featuring 2D retro style graphics. T
 
 There is no variation or evolution in gameplay throughout the game, as the pipes always have the same gap between them and there is no end to the running track, having only the flap and ding sounds and the rising score as rewards.
  
-Press space to fly
+ Press space to fly  
+
 [![N|Solid](https://raw.githubusercontent.com/dzmitry-duboyski/flappy-bird-game/master/assets/img/screenGame.jpg)](https://dzmitry-duboyski.github.io/flappy-bird-game/)
 
 
